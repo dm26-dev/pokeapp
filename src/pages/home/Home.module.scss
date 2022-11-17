@@ -1,17 +1,18 @@
 .home {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  position: relative;
 
   &__img {
-    background-image: url("../../../public/PokeHome.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100%;
+    width: 350px;    
+    height: auto;    
+    img{
+      width: 100%;
+    }
   }
 
-  &__backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
+  &__backdrop {    
     width: 100%;
     height: 100%;
     position: absolute;
@@ -22,13 +23,15 @@
     align-items: flex-end;
 
     button {
-      background-color: transparent;
+      background-color: rgb(255, 217, 36);
       padding: 15px 45px;
       margin-bottom: 45px;
-      border: 2px solid white;
+      border: 2px solid rgba(61, 88, 166);
       color: white;
       font-weight: bold;
       border-radius: 5px;
+      color: rgba(61, 88, 166);
+      font-weight: bold;
     }
   }
 }
