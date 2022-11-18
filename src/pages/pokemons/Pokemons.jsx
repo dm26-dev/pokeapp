@@ -1,5 +1,5 @@
 import { useEffect, useContext } from 'react'
-import { PokeContext } from 'context/PokeContext'
+import { PokeContext } from 'context/PokeState'
 import { Card } from 'components/card/Card'
 
 import { Loader } from 'components/loader/Loader'
