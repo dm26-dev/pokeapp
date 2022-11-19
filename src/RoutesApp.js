@@ -11,7 +11,7 @@ export const RoutesApp = () => {
             <Route path='*' element={<NotFound />} />
             <Route path='/' element={<Home />} />
             <Route path='/pokemons' element={<Pokemons />} />
-            <Route path='/pokemons/:pokemon' element={<Pokemon />} />
+            <Route path='/pokemons/:name' element={<Pokemon />} />
             <Route path='/favoritos' element={<Favorites />} />
         </Routes>
     )

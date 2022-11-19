@@ -1,11 +1,76 @@
-.pokemon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.pokemon {
+  width: 100%;
+  height: 100vh;
 
-    img{
-        width: 200px;
+  &__type_grass {
+    background: rgb(197, 248, 197);
+    background: linear-gradient(
+      87deg,
+      rgba(197, 248, 197, 1) 0%,
+      rgba(125, 220, 126, 1) 100%
+    );
+  }
+
+  &__type_fire {
+    background: rgb(255, 179, 127);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 179, 127, 1) 0%,
+      rgba(242, 117, 29, 1) 100%
+    );
+  }
+
+  &__type_water {
+    background: rgb(155, 200, 232);
+    background: linear-gradient(
+      88deg,
+      rgba(155, 200, 232, 1) 0%,
+      rgba(81, 153, 201, 1) 100%
+    );
+  }
+
+  &__type_poison {
+    background: rgb(254, 229, 243);
+    background: linear-gradient(
+      88deg,
+      rgba(254, 229, 243, 1) 0%,
+      rgba(246, 158, 209, 1) 100%
+    );
+  }
+
+  &__type_normal {
+    background: rgb(231, 235, 238);
+    background: linear-gradient(0deg, rgba(231, 235, 238, 1) 0%);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+
+  &__name {
+    margin: 20px 0;
+    margin-bottom: 40px;
+
+    h2 {
+      text-align: center;
+      font-size: 1.8em;
+      color: white;
+      &::first-letter {
+        text-transform: uppercase;
+      }
     }
-    
+  }
+
+  &__img {
+    text-align: center;
+    img {
+      width: 200px;
+    }
+  }
 }
