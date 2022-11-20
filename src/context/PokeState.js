@@ -13,7 +13,7 @@ export const PokeState = ({ children }) => {
   const getPokemons = () => {
 
     setTimeout(() => {
-      axios.get('https://pokeapi.co/api/v2/pokemon?limit=50s&offset=0')
+      axios.get('https://pokeapi.co/api/v2/pokemon?limit=151s&offset=0')
         .then(res => {
 
           if (res.status !== 200) {

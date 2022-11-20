@@ -1,6 +1,31 @@
-.pokemons{
-    &__cont{
-        display: flex;
-        flex-wrap: wrap;
-    }
+.pokemons {
+  &__cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+    background: rgb(155, 200, 232);
+    background: linear-gradient(
+      88deg,
+      rgba(155, 200, 232, 1) 0%,
+      rgba(81, 153, 201, 1) 100%
+    );
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__body {
+    margin-top: 70px;
+  }
 }
